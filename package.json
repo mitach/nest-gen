@@ -2,7 +2,7 @@
     "name": "nestjs-nextjs-monorepo",
     "scripts": {
         "build": "npm run build:backend && npm run build:frontend",
-        "build:backend": "cd backend && npm ci && npm run build",
+        "build:backend": "cd backend && npm ci && npm install -g @nestjs/cli && npm run build",
         "build:frontend": "cd client && npm ci && npm run build",
         "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
         "start:backend": "cd backend && npm run start:prod",
