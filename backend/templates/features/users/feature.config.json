@@ -1,7 +1,0 @@
-{
-  "updateAppModule": true,
-  "copyFiles": [
-    { "source": "users.module.ts", "target": "src/users/users.module.ts" },
-    { "source": "users.service.ts", "target": "src/users/users.service.ts" }
-  ]
-}
