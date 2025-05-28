@@ -10,6 +10,7 @@ import { MonolithFeatures } from './features/MonolithFeatures';
 import { MicroserviceFeatures } from './features/MicroserviceFeatures';
 
 const api = new ProjectGeneratorAPI();
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export const ProjectGenerator: React.FC = () => {
   const {
@@ -62,6 +63,7 @@ export const ProjectGenerator: React.FC = () => {
       };
 
       pollStatus();
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       setLoading(false);
       setResponseMessage(`❌ Error: ${err.message}`);

@@ -1,4 +1,5 @@
 export type Architecture = "monolith" | "microservice";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export type FeatureConfig = {
   id: string;
@@ -16,6 +17,7 @@ export type MonolithConfig = {
   projectName: string;
   architecture: "monolith";
   features: string[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   config: Record<string, any>;
 };
 
